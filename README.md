@@ -2,11 +2,18 @@
 
 An example project for [Creating MCP Servers in Swift](https://www.artemnovichkov.com/blog/creating-mcp-servers-in-swift) article.
 
+### Visual Studio Code:
 <p align="center">
   <img src=".github/vscode.png" width="80%"/>
-  <br><br>
+</p>
+
+### Cursor:
+<p align="center">
   <img src=".github/cursor.png" width="80%"/>
-  <br><br>
+</p>
+
+### Claude Desktop
+<p align="center">
   <img src=".github/claude.png" width="80%"/>
 </p>
 
