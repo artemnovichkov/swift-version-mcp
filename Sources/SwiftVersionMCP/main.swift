@@ -14,8 +14,11 @@ let server = Server(
 let transport = StdioTransport()
 try await server.start(transport: transport)
 
-let tool = Tool(name: "swift-version",
-                description: "Returns the current Swift version")
+let tool = Tool(name: "swift_version",
+                description: "Returns the current Swift version",
+                inputSchema: .object([
+                    "type": .string("object")
+                ]))
 
 await server.withMethodHandler(ListTools.self) { params in
     ListTools.Result(tools: [tool])
@@ -23,7 +26,7 @@ await server.withMethodHandler(ListTools.self) { params in
 
 await server.withMethodHandler(CallTool.self) { params in
     guard params.name == tool.name else {
-        throw MCPError.invalidParams("Wrong tool name")
+        throw MCPError.invalidParams("Wrong tool name: \(params.name)")
     }
     return CallTool.Result(content: [.text(swiftVersion() ?? "No version")])
 }
