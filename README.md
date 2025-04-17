@@ -2,8 +2,12 @@
 
 An example project for [Creating MCP Servers in Swift](https://www.artemnovichkov.com/blog/creating-mcp-servers-in-swift) article.
 
-<p align="center"/>
-  <img src=".github/preview.png" width="80%"/>
+<p align="center">
+  <img src=".github/vscode.png" width="80%"/>
+  <br><br>
+  <img src=".github/cursor.png" width="80%"/>
+  <br><br>
+  <img src=".github/claude.png" width="80%"/>
 </p>
 
 ## Author
