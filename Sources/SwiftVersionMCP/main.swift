@@ -15,7 +15,7 @@ let transport = StdioTransport()
 try await server.start(transport: transport)
 
 let tool = Tool(name: "swift-version",
-                description: "Return the current Swift version")
+                description: "Returns the current Swift version")
 
 await server.withMethodHandler(ListTools.self) { params in
     ListTools.Result(tools: [tool])
