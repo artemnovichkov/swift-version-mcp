@@ -1,7 +1,3 @@
-//
-//  Created by Artem Novichkov on 17.04.2025.
-//
-
 import MCP
 import Foundation
 
