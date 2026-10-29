@@ -12,7 +12,7 @@ let package = Package(
         .executable(name: "swift-version-mcp", targets: ["SwiftVersionMCP"]),
     ],
     dependencies: [
-        .package(url: "https://github.com/modelcontextprotocol/swift-sdk", from: "0.7.1"),
+        .package(url: "https://github.com/modelcontextprotocol/swift-sdk", from: "0.12.1"),
     ],
     targets: [
         .executableTarget(name: "SwiftVersionMCP", dependencies: [
